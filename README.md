@@ -116,6 +116,37 @@ These metrics provide a more comprehensive understanding of the model's classifi
 
 ---
 
+## 📌 Results
+
+The final Logistic Regression model was evaluated on the test dataset using accuracy, precision, recall, and F1-score.
+
+### Classification Report
+
+| Class                | Precision |   Recall | F1-Score | Support |
+| -------------------- | --------: | -------: | -------: | ------: |
+| 0                    |      0.86 |     0.80 |     0.83 |      15 |
+| 1                    |      0.82 |     0.88 |     0.85 |      16 |
+| **Accuracy**         |         — |        — | **0.84** |  **31** |
+| **Macro Average**    |  **0.84** | **0.84** | **0.84** |  **31** |
+| **Weighted Average** |  **0.84** | **0.84** | **0.84** |  **31** |
+
+### Performance Summary
+
+* **Test Accuracy:** 84%
+* **Precision — Class 0:** 86%
+* **Recall — Class 0:** 80%
+* **F1-Score — Class 0:** 83%
+* **Precision — Class 1:** 82%
+* **Recall — Class 1:** 88%
+* **F1-Score — Class 1:** 85%
+
+The model achieved an overall accuracy of **84%** on the test set. For Class 1, the model achieved a recall of **88%**, meaning it correctly identified a relatively high proportion of the actual Class 1 samples in the test data.
+
+> **Note:** These results are specific to the test split used in this project and should not be interpreted as clinical performance or medical diagnostic accuracy.
+
+
+---
+
 ## 💾 Saved Model
 
 The final trained model has been saved using **Joblib**.
